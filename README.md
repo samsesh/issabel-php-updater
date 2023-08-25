@@ -1,16 +1,14 @@
-# Issabel PHP Updater
+# Issabel PHP Updater :shield:
 
-## Introduction
+## Introduction :rocket:
 
-**Issabel PHP Updater** is a specialized project designed to address critical security vulnerabilities present in the default PHP version (used in Issabel version 5) and enhance the security of Issabel installations. While acknowledging that even the updated PHP 7.4 version may still have its own set of bugs in comparison to more recent PHP releases, this project aims to significantly reduce the potential security risks associated with using the older PHP version.
+**Issabel PHP Updater** is an advanced project tailored for seasoned users who possess a deep understanding of Issabel and server management. It addresses critical security vulnerabilities in the default PHP version (used in Issabel version 5) and enhances the security of Issabel installations. While acknowledging that even the updated PHP 7.4 version may still have its own set of bugs in comparison to more recent PHP releases, this project aims to significantly reduce the potential security risks associated with using the older PHP version.
 
-Please note that this undertaking is intended for advanced users with a deep understanding of Issabel and server management.
-
-## Background
+## Background :clipboard:
 
 Issabel, a versatile open-source Unified Communications platform, holds great value for various telephony services. However, the inherent security vulnerabilities in the default PHP version of Issabel 5 have been a cause for concern. By upgrading the underlying PHP version to 7.4, this project endeavors to fortify the security of Issabel installations and preemptively address many of the security issues.
 
-## How to Use
+## How to Use :hammer_and_wrench:
 
 To implement the **Issabel PHP Updater**, follow these steps:
 
@@ -28,7 +26,7 @@ Additionally, for those interested in using **SuiteCRM** (https://suitecrm.com/)
 
 Refer to the official [SuiteCRM documentation](https://docs.suitecrm.com/) for further information.
 
-## Installation
+## Installation :computer:
 
 To install Issabel on CentOS 7, two options are available:
 
@@ -41,7 +39,7 @@ To install Issabel on CentOS 7, two options are available:
 2. **ISO Download**:
    Alternatively, download the ISO file directly from the official Issabel website at [issabel.com](https://www.issabel.com).
 
-## Contributions and Donations
+## Contributions and Donations :heart:
 
 We greatly appreciate contributions and support for this project. Should you find value in this endeavor, please consider contributing or donating to assist us in maintaining and enhancing it.
 

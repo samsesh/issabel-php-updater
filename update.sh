@@ -16,9 +16,25 @@ echo 'zend_extension=ioncube_loader_lin_7.4.so' > /etc/php.d/00-ioncube-loader.i
 echo 'zend_extension=ioncube_loader_lin_7.4.so' > /etc/php.d/00-ioncube.ini
 systemctl restart httpd
 clear
-echo "change func to static func in line 3"
-sleep 10
-nano /var/www/html/admin/libraries/issabelpbx_DB.php
-echo "find !CheckPHPVersion and comment if "
-sleep 10
-nano /usr/share/php/jpgraph/jpgraph.php
+file_path="/var/www/html/admin/libraries/issabelpbx_DB.php"
+line_number=3
+# Backup the original file
+cp "$file_path" "$file_path.bak"
+# Replace the function keyword with static function
+sed -i "${line_number}s/function/static function/" "$file_path"
+
+echo "Function in line $line_number has been changed to static function."
+echo "Backup file created at $file_path.bak"
+
+file_path2="/usr/share/php/jpgraph/jpgraph.php"
+start_pattern="Make sure PHP version is high enough"
+end_pattern="die();"
+
+# Backup the original file
+cp "$file_path2" "$file_path2.bak"
+
+# Comment out the lines between the start and end patterns, excluding the closing curly brace
+sed -i "/$start_pattern/,/$end_pattern/ { /$end_pattern/! s/^/\/\// }" "$file_path2"
+
+echo "Block of code has been commented out in $file_path2"
+echo "Backup file created at $file_path2.bak"

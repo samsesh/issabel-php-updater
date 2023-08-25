@@ -16,7 +16,7 @@ echo 'zend_extension=ioncube_loader_lin_7.4.so' > /etc/php.d/00-ioncube-loader.i
 echo 'zend_extension=ioncube_loader_lin_7.4.so' > /etc/php.d/00-ioncube.ini
 systemctl restart httpd
 clear
-file_path="test/issabelpbx_DB.php"
+file_path="/var/www/html/admin/libraries/issabelpbx_DB.php"
 line_number=4
 # # Backup the original file
 cp "$file_path" "$file_path.bak"
@@ -26,7 +26,7 @@ sed -i "${line_number}s/function/static function/" "$file_path"
 echo "Function in line $line_number has been changed to static function."
 echo "Backup file created at $file_path.bak"
 
-file_path2="test/jpgraph.php"
+file_path2="/usr/share/php/jpgraph/jpgraph.php"
 start_pattern="Make sure PHP version is high enough"
 end_pattern="Make GD sanity check"
 
